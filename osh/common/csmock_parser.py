@@ -207,7 +207,6 @@ class CsmockRunner:
             if not os.path.isdir(self.tmpdir):
                 logger.error('temp dir does not exists!')
                 raise RuntimeError('temp dir does not exists!')
-            command = f'cd {shlex.quote(self.tmpdir)} && ' + command
 
         if su_user:
             if self.our_temp_dir:
